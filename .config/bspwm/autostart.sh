@@ -33,4 +33,4 @@ run volumeicon &
 run fcitx &
 feh --bg-fill /usr/share/backgrounds/swaylock.png &
 #Enable natural scrolling for touchpad
-xinput set-prop 13 "libinput Natural Scrolling Enabled" 1
+#xinput set-prop 13 "libinput Natural Scrolling Enabled" 1

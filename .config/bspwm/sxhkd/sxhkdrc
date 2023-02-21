@@ -92,8 +92,12 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # set the window state
+#super + space
+#	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the window state
 super + space
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	bspc node -t {tiled,floating}
 
 # Move focus to other monitor
 super + BackSpace
@@ -134,8 +138,18 @@ super + shift + Down
 		bspc node -m next --follow
 
 # Contract tiled space
-super + ctrl + {h,j,k,l}
-	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+#super + ctrl + {h,j,k,l}
+#	bspc node {@east -r -10, @north -r 10,@south -r 10,@west -r +10}
+
+super + ctrl + h
+	bspc node @east -r -10
+
+super + ctrl + l
+	bspc node @west -r +10
+super + alt + h
+	bspc node @west -r -10
+super + alt + l
+	bspc node @east -r +10
 
 # Focus parent/brother/first/second for preselection
 super + ctrl + {e,r,t,y}
@@ -155,12 +169,10 @@ super + r
 	bspc node @/ --rotate {90,-90}
 
 
-#Switch here between qwerty and azerty or make new one
 #Focus selected desktop FOR QWERTY KEYBOARDS
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
-#Switch here between qwerty and azerty or make new one
 #Move window to selected desktop FOR QWERTY KEYBOARDS
 super + shift + {1-9,0}
     id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
