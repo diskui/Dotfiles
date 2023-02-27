@@ -1,0 +1,75 @@
+
+
+#archlinux-logout
+super + x
+    archlinux-logout
+
+# terminal
+super + Return
+    kitty
+
+super + o
+    slock
+
+#Keyboard dependent
+super + KP_Enter
+    kitty
+
+#dmenu
+super + d
+    ~/.config/dwm/launcher/launcher.sh
+
+#rofi
+#super + d
+#    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+
+#reload sxhkd:
+super + shift + s
+    pkill -USR1 -x sxhkd
+
+
+
+#flameshot
+super + p
+     flameshot gui
+
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer -D pulse set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer -D pulse set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+#Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
+

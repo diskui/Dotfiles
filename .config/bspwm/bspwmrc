@@ -4,8 +4,8 @@
 $HOME/.config/bspwm/autostart.sh &
 
 #BSPWM configuration
-#bspc config border_radius       8
-bspc config border_width         3
+bspc config border_radius       8
+bspc config border_width         5
 bspc config window_gap           10
 bspc config top_padding          30
 bspc config bottom_padding       10
@@ -49,22 +49,22 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 
 #Floating applications
-bspc rule -a Arcolinux-welcome-app.py state=floating
-bspc rule -a Arcolinux-calamares-tool.py state=floating
-bspc rule -a feh state=floating
-bspc rule -a Galculator state=floating
+#bspc rule -a Arcolinux-welcome-app.py state=floating
+#bspc rule -a Arcolinux-calamares-tool.py state=floating
+#bspc rule -a feh state=floating
+#bspc rule -a Galculator state=floating
 
 #Tiled applications
 bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
-#Float wechat and wine
+#Float social applications
 bspc rule -a wechat.exe state=floating
 bspc rule -a Wine state=floating
-bspc rule -a QQ state=floating
-bspc rule -a qq state=floating
-bspc rule -a telegram-desktop state=floating
-bspc rule -a TelegramDesktop state=floating
+#bspc rule -a QQ state=floating
+#bspc rule -a qq state=floating
+#bspc rule -a telegram-desktop state=floating
+#bspc rule -a TelegramDesktop state=floating
 
 # Tile zathura
 bspc rule -a Zathura state=tiled

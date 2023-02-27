@@ -31,6 +31,6 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
 run fcitx &
-feh --bg-fill /usr/share/backgrounds/swaylock.png &
+feh --bg-fill $HOME/.config/bspwm/bg.png
 #Enable natural scrolling for touchpad
 #xinput set-prop 13 "libinput Natural Scrolling Enabled" 1

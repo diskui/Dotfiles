@@ -18,7 +18,7 @@ super + x
 
 #alacritty
 super + Return
-    alacritty
+    kitty
 
 #reload sxhkd:
 super + shift + s
@@ -169,14 +169,8 @@ super + r
 	bspc node @/ --rotate {90,-90}
 
 
-#Focus selected desktop FOR QWERTY KEYBOARDS
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
-
-#Move window to selected desktop FOR QWERTY KEYBOARDS
-super + shift + {1-9,0}
-    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
-
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f, node -d} '^{1-9,10}' --follow
 
 # Focused desktop window gap
 super + button{4,5}
