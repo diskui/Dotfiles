@@ -16,7 +16,7 @@ function run {
 #run xrandr --output HDMI2 --right-of HDMI1 --auto
 #autorandr horizontal
 
-run "nm-applet"
+#run "nm-applet"
 run "xfce4-power-manager"
 run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
@@ -27,5 +27,4 @@ run "volumeicon"
 run slstatus &
 sxhkd -c ~/.config/dwm/sxhkd/sxhkdrc &
 feh --bg-fill ~/.config/dwm/bg.png
-
 run fcitx &
