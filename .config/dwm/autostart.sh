@@ -17,14 +17,14 @@ function run {
 #autorandr horizontal
 
 #run "nm-applet"
-run "xfce4-power-manager"
-run "blueberry-tray"
-run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
-run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+run "xfce4-power-manager" 
+run "blueberry-tray" 
+run "/usr/lib/xfce4/notifyd/xfce4-notifyd" 
+run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" 
 picom -b  --config ~/.config/dwm/picom.conf &
-run "numlockx on"
-run "volumeicon"
-run slstatus &
+run "numlockx on" 
+run "volumeicon" 
+run "slstatus "
 sxhkd -c ~/.config/dwm/sxhkd/sxhkdrc &
-feh --bg-fill ~/.config/dwm/bg.png
-run fcitx &
+feh --bg-fill ~/.config/dwm/bg.png &
+run "fcitx"
