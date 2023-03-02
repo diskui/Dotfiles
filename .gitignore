@@ -1,0 +1,16 @@
+*
+!.config/alacritty/*
+!.config/bspwm/*
+!.config/dwm/*
+!.config/fish/*
+!.config/fontconfig/*
+!.config/hypr/*
+!.config/kitty/*
+!.config/neofetch/*
+!.config/polybar/*
+!.config/ranger/*
+!.config/rofi/*
+!.config/sway/*
+!.config/zathura/*
+!.zshrc
+!.gitignore
