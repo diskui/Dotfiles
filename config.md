@@ -55,7 +55,7 @@ install some packages:
 
 ```shell
 sudo pacman -S --needed bitwarden telegram-desktop firefox  \
-ranger zathura zathura-pdf-mupdf foliate  spotify \
+ranger zathura zathura-pdf-mupdf foliate  spotify trash-cli \
 flameshot btop proxychains drawing neovim alacritty min \
 kitty clipman darkhttpd ueberzug  fish neofetch feh lazygit 
 ```
