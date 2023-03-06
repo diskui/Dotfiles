@@ -4,23 +4,25 @@ things i will do after the installation of the (arch-based) `linux` system:
 ### Desktop
 
 #### gnome:
-
 ```shell
 sudo pacman -S --needed gnome 
 
 sudo systemctl enable gdm
 ```
+
 to use `flameshot` in `gnome`:
 
 ```shell
 sudo pacman -S --needed xdg-desktop-portal-gnome  xdg-desktop-portal 
 ```
-#### bspwm
+
+#### bspwm(or dwm)
 ```shell
 sudo pacman -S --needed bspwm polybar sxhkd xorg-xsetroot variety \ 
-nm-applet network-manager-applet xfce4-power-manager \ 
+nm-applet network-manager-applet xfce4-power-manager flameshot \ 
 blueberry picom xfce4-notifyd volumeicon rofi 
 ```
+
 configure the proxy:
 
 ```shell
@@ -31,8 +33,15 @@ echo "http_proxy=\"127.0.0.1:7890\"
 https_proxy=\"127.0.0.1:7890\"
 socks5_proxy=\"127.0.0.1:7890\"" >> /etc/environment
 ```
-#### Other window manager
-to take a screen when in `wayland` window manager:
+
+#### Others
+
+to take a screenshot in xorg 
+```shell
+sudo pacman -S --needed flameshot
+```
+
+to take a screenshot in `wayland` window manager:
 ```shell
 sudo pacman -S --needed swappy slurp grim 
 ```
@@ -49,15 +58,13 @@ pacman -S archlinuxcn-keyring
 pacman -S --needed yay-bin 
 ```
 
-
-
 install some packages:
 
 ```shell
 sudo pacman -S --needed bitwarden telegram-desktop firefox  \
-ranger zathura zathura-pdf-mupdf foliate  spotify trash-cli \
-flameshot btop proxychains drawing neovim alacritty min \
-kitty clipman darkhttpd ueberzug  fish neofetch feh lazygit 
+ranger zathura zathura-pdf-mupdf foliate spotify trash-cli \
+btop proxychains drawing neovim alacritty min \
+kitty darkhttpd ueberzug neofetch feh lazygit 
 ```
 
 some `aur` packages:
@@ -79,6 +86,28 @@ ssh-keygen -t ed25519 -C "kaxiford@gmail.com"
 
 # add to github
 ```
+### Shell
+#### zsh
+```shell
+# install zsh
+sudo pacman -S zsh
+```
+#### fish
+```shell
+sudo pacman -S fish
+```
+
+### clipboard tool
+#### xorg
+```
+sudo pacman -S --needed xsel
+```
+
+#### wayland
+```
+sudo pacman -S --needed clipman
+```
+
 ### Input Method
 #### ibus
 
