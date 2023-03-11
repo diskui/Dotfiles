@@ -62,16 +62,16 @@ install some packages:
 
 ```shell
 sudo pacman -S --needed bitwarden telegram-desktop firefox  \
-ranger zathura zathura-pdf-mupdf foliate spotify trash-cli \
-btop proxychains drawing neovim alacritty min \
-kitty darkhttpd ueberzug neofetch feh lazygit 
+ranger zathura zathura-pdf-poppler foliate spotify trash-cli \
+btop proxychains drawing neovim alacritty min chromium \
+kitty darkhttpd ueberzug neofetch feh lazygit gnome-system-monitor
 ```
 
 some `aur` packages:
 
 ```shell
-paru -S --needed  jetbrains-toolbox linuxqq picgo-appimage microsoft-edge-stable-bin \
-wps-office ttf-wps-fonts google-chrome visual-studio-code-bin typora
+paru -S --needed  jetbrains-toolbox linuxqq picgo-appimage \
+wps-office ttf-wps-fonts visual-studio-code-bin typora
 ```
 
 ### Git
