@@ -162,7 +162,7 @@ to set the dpi of the deepin wine:
 ### Dotfiles
 clone this repo:
 ```shell 
-git clone git@github.com:diskui/config.git
+git clone git@github.com:diskui/Dotfiles.git
 ```
 
 ----
