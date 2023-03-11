@@ -159,6 +159,14 @@ to set the dpi of the deepin wine:
 /opt/apps/com.qq.weixin.deepin/files/run.sh winecfg
 ```
 
+### Dotfiles
+clone this repo:
+```shell 
+git clone git@github.com:diskui/config.git
+```
+
+----
+
 ### ubuntu:
 
 to install `vmware`, [this repository](https://github.com/mkubecek/vmware-host-modules) is needed
